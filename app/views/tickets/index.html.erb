@@ -1,0 +1,10 @@
+<% @tickets.each do |ticket| %>
+<%= ticket.concert_name %>
+<%= ticket.date_time %>
+<%= ticket.venue %>
+<%= ticket.price %>
+<%= ticket.quantity %>
+<%= ticket.trade_value %>
+<% end %>
+Hello
+<%= link_to 'New Ticket', new_ticket_path %>

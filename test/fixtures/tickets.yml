@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  concert_name: MyString
+  date_time: 2014-08-12 17:30:51
+  venue: MyString
+  price: 1.5
+  quantity: 1
+  trade_value: MyString
+
+two:
+  concert_name: MyString
+  date_time: 2014-08-12 17:30:51
+  venue: MyString
+  price: 1.5
+  quantity: 1
+  trade_value: MyString
