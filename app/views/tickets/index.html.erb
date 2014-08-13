@@ -1,10 +1,10 @@
-<% @tickets.each do |ticket| %>
-<%= ticket.concert_name %>
-<%= ticket.date_time %>
-<%= ticket.venue %>
-<%= ticket.price %>
-<%= ticket.quantity %>
-<%= ticket.trade_value %>
+<% @tickets.each do |t| %>
+<%= t.concert_name %>
+<%= t.date_time %>
+<%= t.venue %>
+<%= t.price %>
+<%= t.quantity %>
+<%= t.trade_value %>
 <% end %>
 Hello
-<%= link_to 'New Ticket', new_ticket_path %>
+<%= link_to 'Create a New Ticket', new_ticket_path, class: "btn btn-info" %>

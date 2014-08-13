@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   get 'tickets' => 'tickets#index'
   get 'tickets/new' => 'tickets#new', as: :new_ticket
-  post 'tickets' => 'tickets#create' 
+  post 'tickets' => 'tickets#create'
+  get 'tickets/:id' => 'tickets#show' 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
