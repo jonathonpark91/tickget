@@ -8,7 +8,10 @@ Welcome to TickGet YEEEEH!
 <%= t.price %><br>
 <%= t.quantity %><br>
 <%= t.trade_value %><br>
+<%= link_to 'More Information', t %><br>
 <% end %>
+
+
 
 <%= link_to 'Create a New Ticket', controller: 'tickets', action: 'new', class: "btn btn-info" %>
 
