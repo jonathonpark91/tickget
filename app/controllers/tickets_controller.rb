@@ -9,7 +9,14 @@ class TicketsController < ApplicationController
 
 	def create 
 		@ticket = Ticket.new(ticket_params)
+	
+	if @ticket.save
+		@tickets = Ticket.all
+		render action: 'index'
+	else
+		render action: 'new'
 	end
+end 
 
 	def show
 		@ticket = Ticket.find(params[:id])
@@ -17,6 +24,6 @@ class TicketsController < ApplicationController
 end
 
 private
-	def store_params
+	def ticket_params
 		params.require(:ticket).permit(:concert_name)
 	end
