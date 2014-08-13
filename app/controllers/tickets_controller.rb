@@ -23,9 +23,21 @@ end
 		@ticket = Ticket.find(params[:id])
 	end
 
-	def update
-
+	def edit 
+		@ticket = Ticket.find(params[:id]) 
 	end 
+
+	def update
+			@ticket = Ticket.find(params[:id])
+
+			if @ticket.update(ticket_params)
+				redirect_to action: 'show'
+				
+			else
+				render action: 'edit'
+				
+	end
+end 
 
 	private
 	def ticket_params

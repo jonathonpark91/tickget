@@ -1,2 +1,9 @@
 show.html.erb
-<%= @ticket.name %>
+
+<%= t.concert_name %><br>
+<%= t.date_time %><br>
+<%= t.venue %><br>
+<%= t.price %><br>
+<%= t.quantity %><br>
+<%= t.trade_value %><br>
+<%= link_to "Edit", edit_ticket_path, class:"btn btn-warning" %>

@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   post 'tickets' => 'tickets#create'
   get 'tickets/:id' => 'tickets#show', as: :ticket 
   get 'tickets/:id/edit' => 'tickets#edit' 
+  patch 'tickets/:id' => 'tickets#update'
+  get 'ticketss/:id/edit' => 'tickets#edit', as: :edit_ticket
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
