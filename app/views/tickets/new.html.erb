@@ -1,19 +1,19 @@
 <h1>Create a New Ticket</h1>
 
 <%= form_for(@ticket) do |t| %>
-<br>
-<%= t.text_field :concert_name, placeholder: 'Concert Name:' %>
-<br>
-<%= t.datetime_field :date_time, placeholder: 'Date and Time:' %>
-<br>
-<%= t.text_field :venue, placeholder: 'Location:' %>
-<br>
-<%= t.text_field :price, placeholder: 'Price of Ticket:' %>
-<br>
-<%= t.number_field :quantity, placeholder: 'Quantity:' %>
-<br>
-<%= t.text_field :trade_value, placeholder: 'You would trade for:' %>
-<br>
+	<br>
+	<%= t.text_field :concert_name, placeholder: 'Concert Name:' %>
+	<br>
+	<%= t.datetime_select :date_time, placeholder: 'Date and Time:' %>
+	<br>
+	<%= t.text_field :venue, placeholder: 'Location:' %>
+	<br>
+	<%= t.text_field :price, placeholder: 'Price of Ticket:' %>
+	<br>
+	<%= t.number_field :quantity, placeholder: 'Quantity:' %>
+	<br>
+	<%= t.text_field :trade_value, placeholder: 'You would trade for:' %>
+	<br>
 
 <%= t.submit %>
 <% end %>
