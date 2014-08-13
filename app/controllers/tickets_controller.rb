@@ -9,14 +9,13 @@ class TicketsController < ApplicationController
 
 	def create 
 		@ticket = Ticket.new(ticket_params)
-<<<<<<< HEAD
+
 	
 	if @ticket.save
 		@tickets = Ticket.all
 		render action: 'index'
 	else
 		render action: 'new'
-=======
 
 	end
 end 
@@ -25,8 +24,6 @@ end
 		@ticket = Ticket.find(params[:id])
 	end
 
-<<<<<<< HEAD
-=======
 	private
 	def ticket_params
 		params.require(:ticket).permit(:concert_name, :date_time, :venue, :price, :quantity, :trade_value)
