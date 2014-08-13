@@ -10,7 +10,6 @@ class TicketsController < ApplicationController
 	def create 
 		@ticket = Ticket.new(ticket_params)
 
-	
 	if @ticket.save
 		@tickets = Ticket.all
 		render action: 'index'
@@ -23,6 +22,10 @@ end
 	def show
 		@ticket = Ticket.find(params[:id])
 	end
+
+	def update
+
+	end 
 
 	private
 	def ticket_params
