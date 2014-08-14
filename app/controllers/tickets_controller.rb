@@ -2,7 +2,7 @@ class TicketsController < ApplicationController
 	def index
 		@tickets = Ticket.all
 	end
-end
+
 	def new 
 		@ticket = Ticket.new
 	end
@@ -17,7 +17,7 @@ end
 		render action: 'new'
 
 	end
-end 
+	end 
 
 	def show
 		@ticket = Ticket.find(params[:id])
@@ -50,7 +50,7 @@ end
 
 		end
 	end	
-
+end 
 
 private
 	def ticket_params
