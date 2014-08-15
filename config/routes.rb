@@ -7,8 +7,7 @@ Rails.application.routes.draw do
   patch 'tickets/:id' => 'tickets#update', as: :show_ticket
   delete 'tickets/:id' => 'tickets#destroy', as: :delete_ticket
 
-<<<<<<< HEAD
-=======
+
   get 'users' => 'users#index'
   
   post 'users' => 'users#create'
@@ -24,7 +23,7 @@ Rails.application.routes.draw do
   delete 'signout' => 'sessions#delete', as: :sign_out
   resources :sessions, only: [:create]
   
->>>>>>> f89c8e6f9678d795e24e926d6c25c590d38d595d
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
