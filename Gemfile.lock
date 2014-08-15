@@ -131,12 +131,9 @@ GEM
 PLATFORMS
   ruby
 
-DEPENDENCIES
-<<<<<<< HEAD
   bootstrap-sass!
-=======
+
   bcrypt-ruby (= 3.1.2)
->>>>>>> f89c8e6f9678d795e24e926d6c25c590d38d595d
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
