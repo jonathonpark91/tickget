@@ -1,6 +1,8 @@
-Welcome to TickGet YEEEEH!
+<div class="title">
+	Welcome to TickGet YEEEEH!
+</div>
 <br>
-
+<div class="ticket">
 <% @tickets.each do |t| %>
 <%= t.concert_name %><br>
 <%= t.date_time %><br>
@@ -10,6 +12,7 @@ Welcome to TickGet YEEEEH!
 <%= t.trade_value %><br>
 <%= link_to 'More Information', t %><br>
 <% end %>
+</div>
 
 
 

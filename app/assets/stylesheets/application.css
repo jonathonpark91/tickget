@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url(http://fonts.googleapis.com/css?family=Bad+Script|Open+Sans);
+
+.title {
+	font-family: 'Bad Script', 'Open Sans';
+	font-size: 30px
+}
+ .ticket {
+ 	font-family: 'Open Sans', 'Bad Script';
+ }

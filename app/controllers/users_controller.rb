@@ -52,13 +52,11 @@ before_action :correct_user, only: [:show, :edit, :update, :destroy]
 	end
 
 	def destroy
-		@user = User.find(params[:id])
-
-		if @user.destroy
-			redirect_to action: 'index'
-		else	
-			render action: 'show'
-		end
+		@user.destroy
+    	respond_to do |format|
+      	format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+      	format.json { head :no_content }
+  		end
 	end
 
 private
