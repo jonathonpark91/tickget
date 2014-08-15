@@ -14,6 +14,14 @@ Rails.application.routes.draw do
   get 'users/:id/edit' => 'users#edit', as: :edit_user
   patch 'users/:id' => 'users#update'
   delete 'users/:id' => 'users#destroy'
+
+  get 'signup' => 'users#new', as: :sign_up
+  root "users#new"
+
+  get 'signin' => 'sessions#new', as: :sign_in
+  delete 'signout' => 'sessions#delete', as: :sign_out
+  resources :sessions, only: [:create]
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
