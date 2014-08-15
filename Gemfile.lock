@@ -129,11 +129,17 @@ GEM
       json (>= 1.8.0)
 
 PLATFORMS
+  bcrypt-unknown
+  bootstrap-unknown
+  coffee-unknown
+  jquery-unknown
   ruby
+  sass-unknown
+  unknown
 
-  bootstrap-sass!
-
+DEPENDENCIES
   bcrypt-ruby (= 3.1.2)
+  bootstrap-sass!
   coffee-rails (~> 4.0.0)
   jbuilder (~> 2.0)
   jquery-rails
