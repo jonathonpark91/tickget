@@ -73,9 +73,8 @@
 	  </a>
 	</div>
 
-
 <br>
-
+<div class="ticket">
 <% @tickets.each do |t| %>
 <%= t.concert_name %><br>
 <%= t.date_time %><br>
@@ -85,6 +84,7 @@
 <%= t.trade_value %><br>
 <%= link_to 'More Information', t%><br>
 <% end %>
+</div>
 
 
 
