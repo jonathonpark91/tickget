@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   patch 'tickets/:id' => 'tickets#update', as: :show_ticket
   delete 'tickets/:id' => 'tickets#destroy', as: :delete_ticket
 
-
   get 'users' => 'users#index'
   
   post 'users' => 'users#create'
