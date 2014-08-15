@@ -1,10 +1,21 @@
-<% @tickets.each do |ticket| %>
-<%= ticket.concert_name %>
-<%= ticket.date_time %>
-<%= ticket.venue %>
-<%= ticket.price %>
-<%= ticket.quantity %>
-<%= ticket.trade_value %>
+<div class="title">
+	Welcome to TickGet YEEEEH!
+</div>
+<br>
+<div class="ticket">
+<% @tickets.each do |t| %>
+<%= t.concert_name %><br>
+<%= t.date_time %><br>
+<%= t.venue %><br>
+<%= t.price %><br>
+<%= t.quantity %><br>
+<%= t.trade_value %><br>
+<%= link_to 'More Information', t %><br>
 <% end %>
-Hello
-<%= link_to 'New Ticket', new_ticket_path %>
+</div>
+
+
+
+<%= link_to 'Create a New Ticket', controller: 'tickets', action: 'new', class: "btn btn-info" %>
+
+<!-- new_ticket_path -->

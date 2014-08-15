@@ -1,0 +1,12 @@
+
+ <%= @ticket.concert_name %><br>
+ <%= @ticket.date_time %><br>
+ <%= @ticket.venue %><br>
+ <%= @ticket.price %><br>
+ <%= @ticket.quantity %><br>
+ <%= @ticket.trade_value %><br>
+
+<%= link_to "Edit", edit_ticket_path, class: "btn btn-warning" %>
+<%= link_to "Back", tickets_path, class: "btn btn-default" %>
+<%= link_to "Delete", @tickets, method: 'delete', class: "btn btn-danger" %>
+
