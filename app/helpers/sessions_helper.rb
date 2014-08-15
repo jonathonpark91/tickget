@@ -7,7 +7,7 @@ module SessionsHelper
 
 	def signed_in_user
 			unless signed_in?
-			redirect_to root_url, notice: "Please sign in."
+			redirect_to first_path, notice: "Please sign in."
 			end
 	end
 
@@ -22,7 +22,7 @@ module SessionsHelper
 
 	def correct_user
 		@user = User.find(params[:id])
-		redirect_to(root_url) unless current_user?(@user)
+		redirect_to first_path unless current_user?(@user)
 
 	end
 

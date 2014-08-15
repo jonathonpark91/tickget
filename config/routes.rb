@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'tickets' => 'tickets#index'
+  get 'tickets' => 'tickets#index', as: :ticket_list
   get 'tickets/new' => 'tickets#new', as: :new_ticket
   post 'tickets' => 'tickets#create'
   get 'tickets/:id' => 'tickets#show', as: :ticket
@@ -13,13 +13,13 @@ Rails.application.routes.draw do
   get 'users/:id' => 'users#show', as: :user
   get 'users/:id/edit' => 'users#edit', as: :edit_user
   patch 'users/:id' => 'users#update'
-  delete 'users/:id' => 'users#destroy'
+  delete 'users/:id' => 'users#destroy', as: :delete_user
 
   get 'signup' => 'users#new', as: :sign_up
   root "users#first", as: :first
 
   get 'signin' => 'sessions#new', as: :sign_in
-  delete 'signout' => 'sessions#delete', as: :sign_out
+  delete 'signout' => 'sessions#destroy', as: :sign_out
   resources :sessions, only: [:create]
   
   # The priority is based upon order of creation: first created -> highest priority.
