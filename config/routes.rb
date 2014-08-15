@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   delete 'tickets/:id' => 'tickets#destroy', as: :delete_ticket
 
   get 'users' => 'users#index'
-  
+
   post 'users' => 'users#create'
   get 'users/:id' => 'users#show', as: :user
   get 'users/:id/edit' => 'users#edit', as: :edit_user
@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   delete 'users/:id' => 'users#destroy'
 
   get 'signup' => 'users#new', as: :sign_up
-  root "users#new"
+  root "users#first", as: :first
 
   get 'signin' => 'sessions#new', as: :sign_in
   delete 'signout' => 'sessions#delete', as: :sign_out
