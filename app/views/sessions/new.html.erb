@@ -1,18 +1,32 @@
-<h1>Sign in</h1>
+
+<head>
+  <title>New User sign in</title>
+  <!-- FONTS -->
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+</head>
+<div>
+<a id="userNew"><img src="https://s3.amazonaws.com/uploads.hipchat.com/140618/1018352/15kY6T6w8miBfii/concert.jpg" ></a>
+
+<div class=signIn>
 
 			<div class="row">
+			<h1>Sign in</h1>
 			  <div class="span6 offset3">
 			    <%= form_for(:session, url: sessions_path) do |f| %>
-
-			      <%= f.label :email %>
+			    	
+			      <p class="emailLabel"><%= f.label :email %>
 			      <%= f.text_field :email %>
-
-			      <%= f.label :password %>
+			      	</p>
+			      	
+			      <p class="passLabel"><%= f.label :password %>
 			      <%= f.password_field :password %>
+			      	</p>
 
 			      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
 			    <% end %>
 
-			    <p>New user? <%= link_to "Sign up now!", sign_up_path %></p>
+			    <p>New user? <%= link_to "Sign up now!", sign_up_path %>
+			    </p>
 			  </div>
 			</div>
+</div>

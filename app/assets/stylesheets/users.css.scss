@@ -1,3 +1,113 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+img {
+	width: 100%;
+	/*text-align: center;*/
+	position: relative;
+	z-index: 0;
+
+}
+
+.ticket {
+	font-family: "Titillium Web", helvetica;
+	font-size: 100px;
+	position: absolute;
+	background-color: rgba(255,255,255, .0);
+	text-align: center;
+	z-index: 1;
+	margin-left: 37%;
+	margin-top: 15%;
+	border-radius: 30px;
+
+}
+
+#search {
+	font-family: "Titillium Web", helvetica;
+	position: absolute;
+	color: black;
+	background-color: white;
+	text-align: center;
+	z-index: 1;
+	margin-left: 53%;
+	margin-top: 30%;
+	border-radius: 10px;
+	font-size: 2em;
+	text-shadow: 0 1px 1px
+   	
+}
+
+button:hover {
+   border-top-color: #e2ebea;
+   background: #e2ebea;
+   color: #ccc;
+   }
+
+button:active {
+   border-top-color: #ffffff;
+   background: #ffffff;
+   opacity: .8;
+   font-style: black;
+   }
+
+
+#search2{
+	font-family: "Titillium Web", helvetica;
+	position: absolute;
+	color: black;
+	background-color: white;
+	text-align: center;
+	z-index: 1;
+	margin-left: 37%;
+	margin-top: 30%;
+	border-radius: 10px;
+	font-size: 2em;
+	text-shadow: 0 1px 1px
+}
+
+#userNew {
+	background-image: cover;
+	/*text-align: center;*/
+	position: relative;
+	z-index: 0;
+	width: 100%;
+	
+}
+
+.userForm {
+	font-family: "Titillium Web", helvetica;
+	position: absolute;
+	background-color: rgba(255,255,255, .4);
+	text-align: center;
+	z-index: 1;
+	margin-left: 35%;
+	margin-top: -70%;
+	border-radius: 30px;
+	font-size: 1.5em;
+	border: dashed;
+	padding: 10px;
+}
+
+.userShow {
+	font-family: "Titillium Web", helvetica;
+	position: absolute;
+	background-color: rgba(255,255,255, .0);
+	z-index: 1;
+	margin-left: 15%;
+	margin-top: -70%;
+	border-radius: 30px;
+	font-size: 1.5em;
+}
+
+.userEdit {
+	font-family: "Titillium Web", helvetica;
+	position: absolute;
+	background-color: rgba(255,255,255, .0);
+	z-index: 1;
+	margin-left: 15%;
+	margin-top: -70%;
+	border-radius: 30px;
+	font-size: 1.5em;
+}

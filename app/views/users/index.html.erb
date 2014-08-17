@@ -1,3 +1,20 @@
+
+ 
+
+
+<br>
+<div class="ticket">
+<% @tickets.each do |t| %>
+<%= t.concert_name %><br>
+<%= t.date_time %><br>
+<%= t.venue %><br>
+<%= t.price %><br>
+<%= t.quantity %><br>
+<%= t.trade_value %><br>
+<%= link_to 'More Information', t%><br>
+<% end %>
+</div>
+
 <h1>Listing users</h1>
 
 <table>
@@ -13,7 +30,7 @@
     </tr>
   </thead>
 
-  <tbody>
+  <body>
     <% @users.each do |user| %>
       <tr>
         <td><%= user.email %></td>
@@ -24,7 +41,7 @@
         <td><%= user.remember_token %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <td><%= button_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %>
       </tr>
     <% end %>
   </tbody>
