@@ -16,4 +16,45 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans|Signika|Cuprum);
+
+body {
+    background-image: url("https://s3.amazonaws.com/uploads.hipchat.com/140618/1018352/15kY6T6w8miBfii/concert.jpg");
+    background-size: 200px;
+	background-size: 200px 100px;
+	background-size: 200px 100px, 400px 200px;
+	background-size: auto 200px;
+	background-size: 50% 25%;
+	background-size: contain;
+	background-size: cover;
+}
+
+
+
+.title {
+	font-family: 'Josefin Sans', 'Open Sans';
+	font-size: 60px;
+	text-align: center;
+	font-weight: bold;
+
+
+}
+ .ticket {
+ 	font-family: 'Josefin Sans';
+ }
+
+ .ticketintro {
+ 	font-family: 'Josefin Sans';
+ 	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+
+ }
+
+ .navbar-brand {
+ 	font-family: 'Cuprum', 'sans-serif';
+ 	font-size: 40px;
+
+ }
+
 
