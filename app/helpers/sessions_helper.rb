@@ -7,7 +7,9 @@ module SessionsHelper
 
 	def signed_in_user
 			unless signed_in?
+
 			redirect_to first_path notice: "Please sign in."
+
 			end
 	end
 
