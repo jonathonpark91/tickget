@@ -31,7 +31,6 @@ body {
 }
 
 .buttonOne {
- 
     padding: 10px 15px;
     margin: 20px;
     border: 0 none;
@@ -40,18 +39,16 @@ body {
     text-align: center;
     z-index: 1;
     opacity: .80;
+    margin-left: 50%;
 }
 
 .buttonTwo {
-  
-    padding: 10px 15px;
-    margin: 20px;
     border: 0 none;
     border-radius: 3px;
-    position: absolute;
     text-align: center;
-    z-index: 1;
     opacity: .80;
+
+
 }
 
 
@@ -63,12 +60,42 @@ body {
 
 
 }
- .tix {
+ .ticketTile {
  	font-family: 'Josefin Sans';
  	font-size: 20px;
  	background-color: white;
  	opacity: .8;
+    border-color: black;
+    display: inline-block;
+    background-color: #F7F2F2;
+    border: 1px solid gray;
+    color: #2e2322;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    margin:5px 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #888888;
+    padding: 3px;
+    padding-bottom: 1px;
+    
+
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
  }
+
+ .allTiles {
+    margin: 0px;
+    background-size: 120%;
+    text-align: center;
+
+ }
+
 
  .ticketintro {
  	font-family: 'Josefin Sans';
@@ -82,7 +109,6 @@ body {
  .navbar-brand {
  	font-family: 'Cuprum', 'sans-serif';
  	font-size: 40px;
-
  }
 
 
@@ -99,4 +125,33 @@ body {
 	font-size: 1em;
 	padding: 1.5em;
 }
+
+.editTickets {
+    font-family: "Titillium Web", helvetica;
+    position: absolute;
+    background-color: rgba(255,255,255, .0);
+    text-align: center;
+    z-index: 1;
+    margin-left: 37%;
+    margin-top: 10%;
+    border-radius: 30px;
+    border: solid;
+    font-size: 20px;
+    padding: 1.5em;
+
+}
+.showTickets {
+    font-family: 'Cuprum', 'sans-serif';
+    position: absolute;
+    background-color: rgba(255,255,255, .0);
+    text-align: center;
+    z-index: 1;
+    margin-left: 37%;
+    margin-top: 10%;
+    border-radius: 30px;
+    border: solid;
+    font-size: 20px;
+    padding: 1.5em;
+}
+
 

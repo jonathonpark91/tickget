@@ -1,22 +1,17 @@
 
-
-
-<!-- ///////////////////// NAVIGATION BAR /////////////////////////////////// -->
-<div class="navbar">
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
+
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+      
       <a class="navbar-brand" href="#">Tick.Get</a>
     </div>
-  </div>
+      <ul class="nav navbar-nav navbar-right">
+        <button type="button" class="btn btn-default btn-lg buttonTwo"nav navbar-nav navbar-right""><%= link_to 'Create a New Ticket', new_ticket_path %></button>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
-</div>
 <!-- ////////////////////// END NAVIGATION BAR //////////////////////////// -->
 <!-- /////////////////////// HEADER /////////////////////////////////////// -->
 
@@ -30,29 +25,21 @@ Buy, trade, & sell your concert tickets
 <!-- //////////////////////////NEW TICKET PATH ////////////////////////////-->
 <body>
 <br>
-<div class="tix">
+
+<div class="allTiles">
 <% @tickets.each do |t| %>
-<%= t.concert_name %>
-<%= t.date_time %>
-<%= t.venue %>
-<%= t.price %>
-<%= t.quantity %>
-<%= t.trade_value %>
+<div class="ticketTile">
+Concert: <%= t.concert_name %><br>
+Date & Time: <%= t.date_time %><br>
+# of Tickets: <%= t.quantity %><br>
+<button type="button" class="btn btn-default btn-lg" ><%= link_to 'More Information', t %></button>
+</div>
+<% end %>
+</div>
 
 <br>
-<!-- ////////////////////// END NEW TICKET PATH //////////////////////////  -->
-<!-- //////////////////// PATH BUTTONS //////////////////////////////////// -->
-<div class="buttonOne">
- 
-  <button type="button" class="btn btn-default btn-lg" ><%= link_to 'More Information', t %></button>
-  <br>
-  <% end %>
-</div>
 
-<div class="buttonTwo">
 
-  <button type="button" class="btn btn-default btn-lg"><%= link_to 'Create a New Ticket', new_ticket_path %></button>
-</div>
 <!-- //////////////////// END PATH BUTTONS //////////////////////////////// -->
 
 </div>
