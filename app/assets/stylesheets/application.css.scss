@@ -27,8 +27,36 @@ body {
 	background-size: 50% 25%;
 	background-size: contain;
 	background-size: cover;
+    background-repeat: no-repeat;
 }
 
+.buttonOne {
+ 
+    padding: 10px 15px;
+    margin: 20px;
+    border: 0 none;
+    border-radius: 3px;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    margin-left: 20%;
+    margin-top: -1320px;
+    opacity: .80;
+}
+
+.buttonTwo {
+  
+    padding: 10px 15px;
+    margin: 20px;
+    border: 0 none;
+    border-radius: 3px;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    margin-left: -7%;
+    margin-top: -1320px;
+    opacity: .80;
+}
 
 
 .title {
@@ -48,6 +76,9 @@ body {
  	font-size: 30px;
 	text-align: center;
 	font-weight: bold;
+    color: black;
+    margin-top: 20px;
+    margin-left: 32%;
 
  }
 
