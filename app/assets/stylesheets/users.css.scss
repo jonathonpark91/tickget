@@ -18,11 +18,13 @@ img {
 	color: white;
 	text-align: center;
 	z-index: 1;
-	margin-left: 37%;
+	margin-left: 36%;
 	margin-top: 15%;
 }
 
-.ticketintro {
+.welcomeintro {
+	font-family: 'Josefin Sans';
+	font-size: 30px;
 	position: absolute;
 	color: white;
 	text-align: center;
@@ -37,6 +39,7 @@ img {
 	z-index: 1;
 	margin-left: 51%;
 	margin-top: 30%;
+	opacity: .80;
 	}
 
 #search2{
@@ -45,13 +48,14 @@ img {
 	z-index: 1;
 	margin-left: 38%;
 	margin-top: 30%;
+	opacity: .80;
 }
 
-/*button:hover {
+button:hover {
    border-top-color: #e2ebea;
    background: #e2ebea;
    color: #ccc;
-   }*/
+   }
 
 /*button:active {
    border-top-color: #ffffff;
@@ -82,7 +86,7 @@ img {
 	margin-top: -70%;
 	border-radius: 30px;
 	font-size: 1.5em;
-	border: dashed;
+	border: solid;
 	padding: 10px;
 }
 
