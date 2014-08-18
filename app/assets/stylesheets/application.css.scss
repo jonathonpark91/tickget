@@ -31,7 +31,6 @@ body {
 }
 
 .buttonOne {
- 
     padding: 10px 15px;
     margin: 20px;
     border: 0 none;
@@ -39,23 +38,17 @@ body {
     position: absolute;
     text-align: center;
     z-index: 1;
-    margin-left: 20%;
-    margin-top: -1400px;
     opacity: .80;
+    margin-left: 50%;
 }
 
 .buttonTwo {
-  
-    padding: 10px 15px;
-    margin: 20px;
     border: 0 none;
     border-radius: 3px;
-    position: absolute;
     text-align: center;
-    z-index: 1;
-    margin-left: -7%;
-    margin-top: -1400px;
     opacity: .80;
+
+
 }
 
 
@@ -67,8 +60,10 @@ body {
 
 
 }
- .ticket {
+ .tix {
  	font-family: 'Josefin Sans';
+    color: white;
+    font-size: 20px;
  }
 
  .ticketintro {
@@ -85,6 +80,31 @@ body {
  	font-size: 40px;
 
  }
+
+ .ticketTile {
+    display: inline-block;
+    background-color: #F7F2F2;
+    border: 1px solid gray;
+    color: #2e2322;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    margin:5px 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #888888;
+    padding: 3px;
+    padding-bottom: 1px;
+    opacity: 1;
+
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
 
 
 
