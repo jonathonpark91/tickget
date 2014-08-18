@@ -26,19 +26,21 @@ Buy, trade, & sell your concert tickets
 <body>
 <br>
 
-<div class="ticketTile"></div>
-<div class="tix">
+<div class="allTiles">
 <% @tickets.each do |t| %>
-<%= t.concert_name %><br>
-<%= t.date_time %><br>
-<%= t.quantity %><br>
+<div class="ticketTile">
+Concert: <%= t.concert_name %><br>
+Date & Time: <%= t.date_time %><br>
+# of Tickets: <%= t.quantity %><br>
 <button type="button" class="btn btn-default btn-lg" ><%= link_to 'More Information', t %></button>
-  <br>
 </div>
 <% end %>
+</div>
+
+<br>
+
 
 <!-- //////////////////// END PATH BUTTONS //////////////////////////////// -->
-
 
 </div>
 </body>

@@ -1,26 +1,34 @@
 
+<div class="newtix">
+
 <h1>Create a New Ticket</h1>
 
-
-
-
 <%= form_for(@ticket) do |t| %>
-	<br>
+	<p>
 	<%= t.text_field :concert_name, placeholder: 'Concert Name:' %>
-	<br>
+	</p>
+	<p>
 	<%= t.datetime_select :date_time, placeholder: 'Date and Time:' %>
-	<br>
+	</p>
+	<p>
 	<%= t.text_field :venue, placeholder: 'Location:' %>
-	<br>
+	</p>
+	<p>
 	<%= t.text_field :price, placeholder: 'Price of Ticket:' %>
-	<br>
+	</p>
+	<p>
 	<%= t.number_field :quantity, placeholder: 'Quantity:' %>
-	<br>
+	</p>
+	<p>
 	<%= t.text_field :trade_value, placeholder: 'You would trade for:' %>
-	<br>
+	</p>
 
-<%= t.submit %>
+<p><%= t.submit %>
 <% end %>
+</p>
 
-<%= link_to "Ticket List", tickets_path, class: "btn btn-default" %>
+<p><%= link_to "Ticket List", tickets_path, class: "btn btn-default" %>
 <%= link_to "Back to User", users_path, class: "btn btn-default" %>
+</p>
+
+</div>
