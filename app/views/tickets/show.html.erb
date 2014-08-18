@@ -1,14 +1,14 @@
-
-
- <%= @ticket.concert_name %><br>
- <%= @ticket.date_time %><br>
- <%= @ticket.venue %><br>
- <%= @ticket.price %><br>
- <%= @ticket.quantity %><br>
- <%= @ticket.trade_value %><br>
+<div class="showTickets">
+<h1> More information: </h1>	
+ Concert Name: <%= @ticket.concert_name %><br>
+ Date & Time: <%= @ticket.date_time %><br>
+ Venue: <%= @ticket.venue %><br>
+ Price: <%= @ticket.price %><br>
+ Quantity: <%= @ticket.quantity %><br>
+ Willing to Trade for: <%= @ticket.trade_value %><br>
 <br>
 <%= link_to "Edit", edit_ticket_path, class: "btn btn-warning" %>
 <%= link_to "Back", tickets_path, class: "btn btn-default" %>
 <%= button_to "Delete", @tickets, method: 'delete', class: "btn btn-danger" %>
 
-
+</div>
