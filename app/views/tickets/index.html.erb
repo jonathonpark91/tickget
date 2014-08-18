@@ -1,5 +1,6 @@
 
 
+
 <!-- ///////////////////// NAVIGATION BAR /////////////////////////////////// -->
 <div class="navbar">
 <nav class="navbar navbar-default" role="navigation">
@@ -18,17 +19,18 @@
 </div>
 <!-- ////////////////////// END NAVIGATION BAR //////////////////////////// -->
 <!-- /////////////////////// HEADER /////////////////////////////////////// -->
+
 <div class="title">
-	Welcome to Tick.Get
+  Welcome to Tick.Get
 </div>
 <div class="ticketintro">
 Buy, trade, & sell your concert tickets
 </div>
 <!-- ////////////////////// END HEADER /////////////////////////////////// -->
 <!-- //////////////////////////NEW TICKET PATH ////////////////////////////-->
-
+<body>
 <br>
-<div class="ticket">
+<div class="tix">
 <% @tickets.each do |t| %>
 <%= t.concert_name %><br>
 <%= t.date_time %><br>
@@ -36,18 +38,22 @@ Buy, trade, & sell your concert tickets
 <%= t.price %><br>
 <%= t.quantity %><br>
 <%= t.trade_value %><br>
+
 <br>
 <!-- ////////////////////// END NEW TICKET PATH //////////////////////////  -->
 <!-- //////////////////// PATH BUTTONS //////////////////////////////////// -->
 <div class="buttonOne">
-<p id="search"><button type="button"><%= link_to 'More Information', t %></button></p>
+ 
+  <button type="button" class="btn btn-default btn-lg" ><%= link_to 'More Information', t %></button>
+  <br>
+  <% end %>
 </div>
 
 <div class="buttonTwo">
-<p id="search"><button type="button"><%= link_to 'Create a New Ticket', new_ticket_path %></button></p>
+
+  <button type="button" class="btn btn-default btn-lg"><%= link_to 'Create a New Ticket', new_ticket_path %></button>
 </div>
 <!-- //////////////////// END PATH BUTTONS //////////////////////////////// -->
-<% end %>
+
 </div>
-
-
+</body>

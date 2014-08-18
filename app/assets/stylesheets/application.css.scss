@@ -27,8 +27,32 @@ body {
 	background-size: 50% 25%;
 	background-size: contain;
 	background-size: cover;
+    background-repeat: no-repeat;
 }
 
+.buttonOne {
+ 
+    padding: 10px 15px;
+    margin: 20px;
+    border: 0 none;
+    border-radius: 3px;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    opacity: .80;
+}
+
+.buttonTwo {
+  
+    padding: 10px 15px;
+    margin: 20px;
+    border: 0 none;
+    border-radius: 3px;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    opacity: .80;
+}
 
 
 .title {
@@ -39,7 +63,7 @@ body {
 
 
 }
- .ticket {
+ .tix {
  	font-family: 'Josefin Sans';
  }
 
@@ -48,6 +72,7 @@ body {
  	font-size: 30px;
 	text-align: center;
 	font-weight: bold;
+    color: black;
 
  }
 
@@ -56,5 +81,8 @@ body {
  	font-size: 40px;
 
  }
+
+
+
 
 
