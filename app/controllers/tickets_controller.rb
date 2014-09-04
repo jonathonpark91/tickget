@@ -32,7 +32,7 @@ class TicketsController < ApplicationController
 			@ticket = Ticket.find(params[:id])
 
 			if @ticket.update(ticket_params)
-				redirect_to action: 'show'
+				redirect_to @ticket
 				
 			else
 				render action: 'edit'
@@ -56,4 +56,3 @@ private
 	def ticket_params
 		params.require(:ticket).permit(:concert_name, :date_time, :venue, :price, :quantity, :trade_value)
 	end
-

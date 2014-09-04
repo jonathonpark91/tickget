@@ -16,7 +16,7 @@
 	</div>
 	<div class="field">
 		<%= f.label :photo %><br>
-		<%= f.text_field :photo %>
+		<%= f.url_field :photo %>
 	</div>
 	<div class="field">
 		<%= f.label :location %><br>
@@ -28,11 +28,11 @@
 	</div>
 	<div class="field">
 		<%= f.label :password %><br>
-		<%= f.text_field :password %>
+		<%= f.password_field :password %>
 	</div>
 	<div class="field">
 		<%= f.label :password_confirmation %><br>
-		<%= f.text_field :password_confirmation %>
+		<%= f.password_field :password_confirmation %>
 	</div>
 	<div class="actions">
 		<%= f.submit %>
